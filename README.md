@@ -35,3 +35,4 @@ python3 app.py
 * https://flask.palletsprojects.com/en/1.1.x/errorhandling/
 * https://www.askpython.com/python-modules/flask/flask-crud-application
 * https://medium.com/bitproject/recently-i-created-a-restful-api-with-flask-where-my-models-had-many-parameters-75da1db870b7
+* https://blog.mphomphego.co.za/blog/2018/09/14/How-I-configured-SonarQube-for-Python-code-analysis.html
