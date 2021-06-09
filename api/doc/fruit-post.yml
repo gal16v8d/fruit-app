@@ -1,0 +1,14 @@
+Allows to create a fruit, should receive the fruit name
+---
+responses:
+  201:
+    description: Stored Fruit data in json representation
+    examples:
+      {
+        "_links": { "collection": "/api/fruits", "self": "/api/fruits/1" },
+        "datetime": "2020-10-07T03:19:43.581753",
+        "id": 1,
+        "name": "Cherry",
+      }
+  400:
+    description: Missing or not compliant value

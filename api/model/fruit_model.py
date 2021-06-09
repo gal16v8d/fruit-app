@@ -1,8 +1,9 @@
-from app import db
+from api.model.database import db, BaseModelMixin
 from sqlalchemy import Column, Integer, String, DateTime
 from datetime import datetime
 
-class FruitModel(db.Model):
+
+class FruitModel(db.Model, BaseModelMixin):
     __tablename__ = 'fruit'
 
     id = Column(Integer, primary_key=True)

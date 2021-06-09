@@ -1,0 +1,18 @@
+Allows to get a single fruit by id
+---
+parameters:
+  - name: id
+    in: path
+    required: true
+responses:
+  200:
+    description: Fruit data in json representation
+    examples:
+      {
+        "_links": { "collection": "/api/fruits", "self": "/api/fruits/1" },
+        "datetime": "2020-10-07T03:19:43.581753",
+        "id": 1,
+        "name": "Cherry",
+      }
+  404:
+    description: Fruit is not present in db

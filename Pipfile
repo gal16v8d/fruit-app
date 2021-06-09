@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+apispec = "*"
+Flask = "*"
+Flask-Bootstrap = "*"
+flask-marshmallow = "*"
+Flask-Migrate = "*"
+Flask-SQLAlchemy = "*"
+Flask-WTF = "*"
+flasgger = "*"
+marshmallow-sqlalchemy= "*"
+psycopg2-binary = "*"
+pylint = "*"
+pep8 = "*"
+autopep8 = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"

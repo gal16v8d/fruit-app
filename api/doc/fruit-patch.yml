@@ -1,0 +1,20 @@
+Allows to patch a single fruit data by id
+---
+parameters:
+  - name: id
+    in: path
+    required: true
+responses:
+  200:
+    description: Fruit data updated in json representation
+    examples:
+      {
+        "_links": { "collection": "/api/fruits", "self": "/api/fruits/1" },
+        "datetime": "2020-10-07T03:19:43.581753",
+        "id": 1,
+        "name": "Cherry",
+      }
+  400:
+    description: "Missing data or bas content type"
+  404:
+    description: Fruit is not present in db

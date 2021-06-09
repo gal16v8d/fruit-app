@@ -1,0 +1,11 @@
+Allows to delete a single fruit data by id
+---
+parameters:
+  - name: id
+    in: path
+    required: true
+responses:
+  204:
+    description: Fruit data deletion success
+  404:
+    description: Fruit is not present in db

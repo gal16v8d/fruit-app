@@ -1,0 +1,5 @@
+Get All fruits stored in db and mapped in Jinja
+---
+responses:
+  200:
+    description: Datatable with fruits info on Jinja template

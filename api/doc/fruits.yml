@@ -1,0 +1,5 @@
+Get All fruits stored in db
+---
+responses:
+  200:
+    description: All fruit data in json representation
