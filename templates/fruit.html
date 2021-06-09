@@ -4,16 +4,25 @@
 		<h1>Fruit List</h1>
 		<div class="table-responsive">
 			<table class="table table-striped">
+				<caption>Registered Fruits</caption>
 				<thead>
-					<tr><th>Fruit Name</th></tr>
+					<tr>
+						<th>Id</th>
+						<th>Name</th>
+						<th>Created On</th>
+					</tr>
 				</thead>
 				<tbody>
 					{% for fruit in fruits %}
-						<tr><td>{{fruit}}</td></tr>
+						<tr>
+							<td>{{fruit.id}}</td>
+							<td>{{fruit.name}}</td>
+							<td>{{fruit.datetime}}</td>
+						</tr>
 					{% endfor %}
 				</tbody>
 			</table>
 		</div>
-		<img src={{url_for('static', filename='bitbucket_logo.png')}} />
+		<img src={{url_for('static', filename='bitbucket_logo.png')}} alt="page logo" />
 	{% endblock %}
 {% endblock %}

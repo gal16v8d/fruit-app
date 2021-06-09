@@ -1,5 +1,14 @@
 {
+    "python.pythonPath": "${workspaceFolder}/.venv",
     //"python.linting.pylintArgs": ["--load-plugins", "pylint_flask_sqlalchemy", "pylint_flask"],
     "python.linting.pylintEnabled": true,
-    "python.linting.enabled": true
+    "python.linting.enabled": true,
+    "python.linting.pycodestyleEnabled": true,
+    "python.linting.ignorePatterns": [
+        ".vscode/*.py",
+        "**/site-packages/**/*.py",
+        "**/migrations/**"
+    ],
+    "python.formatting.provider": "autopep8",
+    "editor.formatOnSave": true
 }
