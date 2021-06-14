@@ -1,6 +1,5 @@
 from flask import Blueprint, render_template, abort, jsonify, request
 from flasgger import swag_from
-from api.model.database import db
 from api.model.fruit_model import FruitModel
 from api.schema.fruit_schema import FruitSchema
 
