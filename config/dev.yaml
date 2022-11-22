@@ -1,5 +1,0 @@
-pg_host: "localhost"
-pg_port: "5432"
-pg_user: "fruit"
-pg_pass: "fruit"
-pg_db: "fruit_api"

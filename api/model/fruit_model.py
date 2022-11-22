@@ -15,4 +15,4 @@ class FruitModel(db.Model, BaseModelMixin):
         self.datetime = datetime.utcnow()
 
     def __repr__(self):
-        return f'<Fruit {self.name} created onn {self.datetime}>'
+        return f'<Fruit {self.name} created on {self.datetime}>'

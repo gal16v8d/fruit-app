@@ -14,11 +14,12 @@ Flask-WTF = "*"
 flasgger = "*"
 marshmallow-sqlalchemy= "*"
 psycopg2-binary = "*"
+python-dotenv = "*"
+
+[dev-packages]
 pylint = "*"
 pep8 = "*"
 autopep8 = "*"
-
-[dev-packages]
 
 [requires]
 python_version = "3.10"

@@ -1,4 +1,5 @@
 import yaml
+from dotenv import dotenv_values
 
 
 class Config(object):
@@ -8,16 +9,12 @@ class Config(object):
 
 
 class DevConfig(Config):
-    props = yaml.load(open('./config/dev.yaml'), Loader=yaml.BaseLoader)
-    SQLALCHEMY_DATABASE_URI = 'postgresql://{0}:{1}@{2}:{3}/{4}'.format(
-        props['pg_user'], props['pg_pass'], props['pg_host'],
-        props['pg_port'], props['pg_db'])
+    config = dotenv_values('.env')
+    SQLALCHEMY_DATABASE_URI = config['DB_URL']
 
 
 class TestConfig(Config):
-    props = yaml.load(open('./config/test.yaml'), Loader=yaml.BaseLoader)
+    config = dotenv_values('.env.test')
     DEBUG = True
     TESTING = True
-    SQLALCHEMY_DATABASE_URI = 'postgresql://{0}:{1}@{2}:{3}/{4}'.format(
-        props['pg_user'], props['pg_pass'], props['pg_host'],
-        props['pg_port'], props['pg_db'])
+    SQLALCHEMY_DATABASE_URI = config['DB_URL']

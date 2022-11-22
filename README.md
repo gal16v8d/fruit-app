@@ -52,6 +52,9 @@ flask db init
 flask db migrate
 flask db update
 
+re-create db:
+flask db upgrade
+
 # launch
 
 ## Unix
