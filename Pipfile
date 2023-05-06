@@ -5,7 +5,7 @@ name = "pypi"
 
 [packages]
 apispec = "*"
-Flask = "*"
+Flask = "==2.2.5"
 Flask-Bootstrap = "*"
 flask-marshmallow = "*"
 Flask-Migrate = "*"
